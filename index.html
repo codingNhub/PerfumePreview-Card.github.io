@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>
             Product-Preview-Card
@@ -11,16 +11,14 @@
     <body>
         <div class="container">
             <article>
-                <picture>
-                    <source media="(min-width:640px )" srcset="mobile-image.jpg">
-                </picture>
-                <img class="border"src="destop-image.jpg" alt="">
+                <img  class="mobile-display" src="mobile-image.jpg" alt="mobile-display">
+                <img  class="desktop-display" src="destop-image.jpg" alt="desktop-display">
             </article>
              <article class="last-child">
                 <h2>
                     PERFUME
                 </h2>
-                <h1>
+                <h1 class="heading1">
                     Gabrielle Essence Eau De Parfum
                 </h1>
                 <p>
@@ -35,7 +33,7 @@
                         <s>$169.99</s>
                     </li>
                 </ul>
-                <button class="button"><img src="icon-cart.svg" alt="cart-favicon">Add to Cart</button>
+                <button class="button"><img src="icon-cart.svg" alt="cart-favicon"> Add to Cart</button>
             </article>
         </div>
         <div class="attribution">

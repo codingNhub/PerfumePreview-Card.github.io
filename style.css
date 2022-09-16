@@ -19,7 +19,7 @@ body
       margin-top: 1rem;
  }
 .attribution a { 
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 78%, 83%);
  }
 *
 {
@@ -35,7 +35,9 @@ img
 }
 .container
 {
-    max-width: 700px;
+    max-width: 600px;
+    float: left;
+    margin-top: 3rem;
 }
 ul
 {
@@ -49,6 +51,7 @@ h1
 {
     font-family: 'Fraunces', serif;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     font-size: 2rem;
 }
 h2
@@ -56,6 +59,7 @@ h2
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     font-size: 1rem;
+    letter-spacing: 4px;
     font-weight: 500;
 }
 .li-first-child
@@ -71,8 +75,10 @@ h2
 p
 {
     color: hsl(228, 12%, 48%);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
 }
+
 .price
 {
     font-family: 'Fraunces', serif;
@@ -85,35 +91,70 @@ p
     font-weight: 700;
     width: 100%;
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: 0.625rem 2rem;
-     border: none;
-     outline: none;
-    border-radius: 4rem;
-     cursor: pointer;
-     transition: 0.3s;
+    margin-bottom: .60rem;
+    padding: .65rem .65rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .last-child
 {
     background-color: #fff;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: .67rem;
     max-height: 100%;
 }
 .container article:first-child img
 {
-    border-radius: 1rem  0 0 1rem ;
+    border-radius: 0.5rem  0.5rem 0 0 ;
 }
 .button:hover
 {
     background-color: hsl(158, 38%, 25%);
 }
-@media  (min-width:640px)
+.desktop-display
 {
+    display: none;
+}
+
+@media screen and (min-width:1440px)
+{
+    .mobile-display
+    {
+        display: none;
+    }
+    .desktop-display
+    {
+        display: unset;
+        width: 100%;
+    }
     .container
     {
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .last-child
+    {
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+    max-height: 100%;
+    }
+    .container article:first-child img
+    {
+        border-radius:0.5rem 0 0 0.5rem ;
+    }
+    .button
+    {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .heading1
+    {
+        font-size: 1.94rem;
+    }
+
 }
