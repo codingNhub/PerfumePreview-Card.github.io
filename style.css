@@ -105,7 +105,8 @@ p {
     border-radius: 0 0 0.5rem 0.5rem;
     margin-bottom: 1rem;
     padding: .67rem;
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .container article:first-child img {
@@ -128,7 +129,7 @@ p {
     .desktop-display {
         display: unset;
         width: 100%;
-        height: 90%;
+        height: 100%;
     }
 
     .container {
@@ -138,9 +139,10 @@ p {
 
     .last-child {
         border-radius: 0 0.5rem 0.5rem 0;
+        margin-bottom: 0.5rem;
         padding: 1.5rem;
+        height: 100%;
         width: 100%;
-        height: 90%;
     }
 
     .container article:first-child img {
@@ -148,7 +150,12 @@ p {
     }
 
     .button {
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        margin-bottom: .4rem;
+        margin-top: .4remrem;
     }
+
+    .heading1 {
+        font-size: 1.94rem;
+    }
+
 }
