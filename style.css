@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
@@ -59,6 +58,7 @@ h2 {
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     font-size: 1rem;
+    margin-top: 1rem;
     letter-spacing: 4px;
     font-weight: 500;
 }
@@ -103,7 +103,7 @@ p {
 .last-child {
     background-color: #fff;
     border-radius: 0 0 0.5rem 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: -1rem;
     padding: .67rem;
     height: 100%;
     width: 100%;
@@ -121,7 +121,7 @@ p {
     display: none;
 }
 
-@media screen and (min-width:1440px) {
+@media(min-width:600px) {
     .mobile-display {
         display: none;
     }
@@ -140,6 +140,7 @@ p {
     .last-child {
         border-radius: 0 0.5rem 0.5rem 0;
         margin-bottom: 0.5rem;
+        margin-top: 0;
         padding: 1.5rem;
         height: 100%;
         width: 100%;
